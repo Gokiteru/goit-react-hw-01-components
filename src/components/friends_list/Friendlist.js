@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import styles from './friends.module.css';
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friend_list}>
     {friends.map(friend => (
-      <li className={styles.item} key = {friend.id}>
+      <li className={styles.item} key={friend.id}>
         <span
           className={
             friend.isOnline ? styles.onlineStatus : styles.offlineStatus
